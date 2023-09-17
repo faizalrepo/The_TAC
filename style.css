@@ -32,7 +32,7 @@ section {
 
 section:nth-child(odd) {
     /* color: #e0ffff; */
-    background-image: url("g2.jpg");
+    background-image: url("g2_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* box-shadow: inset 0 $offset $blur-radius (-$spread-radius), inset 0 (-$offset) $blur-radius (-$spread-radius); */
@@ -44,7 +44,8 @@ section:nth-child(even) {
 }
 
 .logo {
-    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Michroma', sans-serif;
     font-size: 2em;
     color: rgb(26, 77, 33);
     user-select: none;
@@ -123,12 +124,13 @@ img {
 
 .slogan .sl2 {
     /* padding-top: 50px; */
+    padding-left: 1px;
     font-size: 1.4em;
 }
 
 .slogan .sl1 {
     margin-bottom: -10px;
-    padding-left: 40px;
+    padding-left: 10px;
     font-weight: 300;
     font-size: 1.4em;
     font-family: 'Michroma', sans-serif;
@@ -150,10 +152,15 @@ h1 {
     font-size: 50px;
 }
 
+.fill {
+    padding-top: 20px;
+}
+
 .wrapper {
     position: relative;
+    margin-right: 90px;
     width: 400px;
-    height: 440px;
+    height: 570px;
     background: transparent;
     border: 2px solid  rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -192,8 +199,8 @@ h1 {
     width: 45px;
     height: 45px;
     background: #386e45b6;
-    font-size: 2em;
-    color: #c9c6c6;
+    font-size: 30px;
+    /* color: #c9c6c6; */
     display: flex;
     justify-content: center;
     align-items: center;

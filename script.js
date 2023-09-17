@@ -7,6 +7,30 @@ const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector('.toggle_btn i');
 const dropDownMenu = document.querySelector('.dropdown-menu');
 
+const submitForm = () => {
+    const names = document.getElementById("names").value;
+    const year = document.getElementById("year").value;
+    const reg = document.getElementById("reg").value;
+    const phone = document.getElementById("phone").value;
+
+    console.log("hi");
+    const formData = new FormData();
+    formData.append("entry.2092238618", names);
+    formData.append("entry.1556369182", year);
+    formData.append("entry.479301265", reg);
+    formData.append("entry.1345269615", phone);
+  
+    fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLScvsJ_plEo8wwIMvY5riqdqVcul7Q_ryZd9hdHGfIh1uQH0Yg/formResponse",
+      {
+        method: "POST",
+        body: formData,
+        mode: "no-cors",
+      }
+    ).then((res) => console.log(res));
+    alert("Submitted.");
+  };
+
 registerLink.addEventListener('click', ()=> {
     wrapper.classList. add('active');
 });
