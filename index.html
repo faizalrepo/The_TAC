@@ -35,12 +35,8 @@
             </h5>
     
             <nav class="navbar">
-    
-                <button class="login">Register</button>
-            
-                <div class="toggle_btn">
-                    <ion-icon name="menu"></ion-icon>
-                </div>
+                <button class="login" onclick="replaceContentInContainer('replace_target', 'target')">Register</button>
+                <button class="login" onclick="replaceContentInContainer('target', 'replace_target')">Download</button>
             </nav>
         </header>
 
@@ -56,7 +52,7 @@
                             LOGOCRAFT
                         </h3></p>
                         <p class="sl1" style="text-align: left;">
-                            A moodboarding challenge.
+                            A moodboard challenge.
                         </p>
                 
                         <br><br><br><br><br>
@@ -85,8 +81,8 @@
                         </p>
                     </div>
                 </td>
-                <td>
-                    <div class="wrapper" id="target">
+                <td id="target">
+                    <div class="wrapper">
     
                         <span class="close">
                             <i class="fa-solid fa-xmark" style="color: #002006;"></i>
@@ -128,16 +124,15 @@
                             </form>
                         </div>
                 
-                        <div id="replace_target" >
+                        <!-- <div id="replace_target" class="dd" >
                             <form id="frm">
                             <h2 class="downl">Download here. <br>
                             <i class="fa-solid fa-angles-down fa-beat-fade fa-lg" id="arrow" style="color: #3a8141;"></i>
                             </h2>
-                            <a href="temp_psd.psd" role="button" download><button type="button" " class="btn2">Download PSD</button></a><br>
-                            <a href="temp_png.png" role="button" download><button type="button" class="btn2">Download PNG</button></a><br>
-                            <!-- <a href="temp_jpg.jpg" role="button" download><button type="button" class="btn2">Download JPG</button></a><br> -->
+                            <a href="temp_psd.psd" role="button" download><button type="button" class="btn2">PSD Template</button></a><br>
+                            <a href="temp_png.png" role="button" download><button type="button" class="btn2">PNG Template</button></a><br>
                             </form>
-                        </div>
+                        </div> -->
                         <div class="signup" style="display: none;">
                             <h2></h2>
                             <form action="#">
@@ -174,6 +169,15 @@
                         </div>
                     </div>
 
+                    <div id="replace_target" class="dd" >
+                        <form id="frm">
+                        <h2 class="downl">Download here. <br>
+                        <i class="fa-solid fa-angles-down fa-beat-fade fa-lg" id="arrow" style="color: #3a8141;"></i>
+                        </h2>
+                        <a href="temp_psd.psd" role="button" download><button type="button" class="btn2">PSD Template</button></a><br>
+                        <a href="temp_png.png" role="button" download><button type="button" class="btn2">PNG Template</button></a><br>
+                        </form>
+                    </div>
                 </td>
             </tr>
         </table>
@@ -239,9 +243,9 @@ anything else.<br>
         </p>
         <br>
         <p class="why-a">
-            1. Competition starts on September 18,2023 12:00 am <br>
-2. Submissions must be received by 11:59 PM on September 24,
-2023. <br>
+            1. Competition starts on September 18,2023 at 05:00 PM <br>
+2. Submissions must be received by <b>11:59 PM</b> on <b>September 24,
+2023</b>. <br>
 3. Submission must be done only through the website.
 
         </p><br><br><br>
@@ -257,7 +261,7 @@ participants.
 
     <div class="main"></div>
 <div class="footer">
-    <div class="bubbles">
+    <!-- <div class="bubbles">
         <div class="bubble" style="--size:3.435228738265379rem; --distance:8.416917313980287rem; --position:16.08097831401158%; --time:2.0992647773438833s; --delay:-3.0772020112299727s;"></div>
         <div class="bubble" style="--size:5.072336796584641rem; --distance:8.011148836393797rem; --position:35.10990272467403%; --time:3.3665629504450814s; --delay:-2.8698777229695636s;"></div>
         <div class="bubble" style="--size:3.3970234857050103rem; --distance:6.847945691001513rem; --position:3.1916324355929824%; --time:3.353797800948076s; --delay:-2.501430510047883s;"></div>
@@ -386,28 +390,28 @@ participants.
         <div class="bubble" style="--size:5.473920157333711rem; --distance:7.597833124447881rem; --position:56.476930813903735%; --time:3.821366548955854s; --delay:-3.8869717682313008s;"></div>
         <div class="bubble" style="--size:4.161043866796106rem; --distance:8.55753462092505rem; --position:43.093715918138095%; --time:3.3664868796862173s; --delay:-2.785785352406203s;"></div>
         <div class="bubble" style="--size:3.1743290449214685rem; --distance:6.478360267601939rem; --position:31.122113550610983%; --time:3.5449715995203825s; --delay:-2.37310999452573s;"></div>
-    </div>
+    </div> -->
     <div class="content">
         <div>
             <div><b>For further inquiries contact:</b></div>
             <div><b>Shandon</b><a href="#">7639747852</a></div>
             <div><b>Sriga G</b><a href="#">8056903707</a></div>
             <div><b>Srinithi Sasi</b><a href="#">8220841419</a></div>
-            <div style="color: white; margin-top: 10px; margin-bottom: -10px;">Designed & developed by <b>Faizal Khan F</b></div>
+            <div style="color: white; margin-top: 10px; margin-bottom: -10px; margin-left: 16%; text-align: center;">Designed & developed by <b>Faizal Khan F</b></div>
         </div>
         <div><a class="image" style="background-image: url(&quot;TAC_logo_w.png&quot;); width: 150px;"></a>
             <p style="padding-left: 47px;">©2023 TAC</p>
         </div>
     </div>
 </div>
-<svg style="position:fixed; top:100vh">
+<!-- <svg style="position:fixed; top:100vh">
     <defs>
         <filter id="blob">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
         </filter>
     </defs>
-</svg>
+</svg> -->
 <script src="https://kit.fontawesome.com/998d41f22a.js" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 <script src="script.js"></script>
