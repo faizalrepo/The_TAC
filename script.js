@@ -29,11 +29,15 @@ const submitForm = () => {
       }
     ).then((res) => console.log(res));
     // alert("Submitted.");
-    window.confirm("Submitted!\nNow download your template.");
+    // window.confirm("Submitted!\nNow download your template.");
   };
-
+  
 function replaceContentInContainer(target, source) {
     document.getElementById(target).innerHTML = document.getElementById(source).innerHTML;
+  }
+
+  function replaceContentInOtherContainer(replace_target, source) {
+    document.getElementById(replace_target).innerHTML = document.getElementById(source).innerHTML;
   }
 
 registerLink.addEventListener('click', ()=> {
