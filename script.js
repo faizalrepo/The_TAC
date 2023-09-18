@@ -28,8 +28,13 @@ const submitForm = () => {
         mode: "no-cors",
       }
     ).then((res) => console.log(res));
-    alert("Submitted.");
+    // alert("Submitted.");
+    window.confirm("Submitted!\nNow download your template.");
   };
+
+function replaceContentInContainer(target, source) {
+    document.getElementById(target).innerHTML = document.getElementById(source).innerHTML;
+  }
 
 registerLink.addEventListener('click', ()=> {
     wrapper.classList. add('active');
@@ -64,3 +69,4 @@ iconClose.addEventListener('click', ()=> {
         }
 
         window.addEventListener("scroll", reveal);
+          

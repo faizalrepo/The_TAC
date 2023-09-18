@@ -65,11 +65,7 @@
                             Think. Design. Inspire People.
                         </h1></p>
                         <br>
-                
-                        <!-- <p><h1>
-                            Sustainability In.
-                        </h1></p> -->
-                
+ 
                         <p class="sl2">
                             Participate and unlock your capabilities.
                         </p>
@@ -90,7 +86,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="wrapper">
+                    <div class="wrapper" id="target">
     
                         <span class="close">
                             <i class="fa-solid fa-xmark" style="color: #002006;"></i>
@@ -120,7 +116,7 @@
                                     <label for="entry.1345269615">Phone No.</label>
                                 </div>
                 
-                                <button type="submit" class="btn" onclick="submitForm()">ENTER</button>
+                                <button type="submit" class="btn" onclick="submitForm(); replaceContentInContainer('target', 'replace_target');">ENTER</button>
                                 
                                 <div class="register">
                                     <p>
@@ -132,6 +128,12 @@
                             </form>
                         </div>
                 
+                        <div id="replace_target">
+                            <a href="temp_psd.psd" role="button" download><button type="button" style="margin-top: 50px;" class="btn2">Download PSD</button></a><br>
+                            <a href="temp_png.png" role="button" download><button type="button" class="btn2">Download PNG</button></a><br>
+                            <a href="temp_jpg.jpg" role="button" download><button type="button" class="btn2">Download JPG</button></a><br>
+        
+                        </div>
                         <div class="signup">
                             <h2></h2>
                             <form action="#">
@@ -167,6 +169,7 @@
                 
                         </div>
                     </div>
+
                 </td>
             </tr>
         </table>
